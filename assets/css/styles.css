@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+--root{
+  --softBlue : #5468e7;
+  --softViolet: #C897E4;
+  --darkBlue: #232340;
+  --desaturedBlue: #767682;
+  --offWhite: #f5f5f5;
+  --lightOrangge: #FFBA79;
+}
+
+body{
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+/* Headings styles */
+.heading1{
+  font-size: 50px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.heading1Mobile{
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.heading2{
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.heading3{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.heading4{
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* Body styles */
+.paragraph{
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.caption{
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.link{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  
+}
+
+/* Navbar Transparent */
+.navbar {
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-link{
+  text-decoration: underline;
+}
+
+.navbarBrand{
+  font-size: 50px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--softBlue);
+}
+
+/* Hero Section Fullscreen */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(30, 30, 46, 0.9), rgba(48, 48, 83, 0.6)), url('./assets/img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+/* Other Styles (optional) */
+.hero-section .container-fluid {
+  max-width: 1200px;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.hero-section .form-control {
+  width: 250px;
+}
+
+.hero-section .btn {
+  background-color: #6366F1;
+  color: white;
+}
+
+.hero-section .btn:hover {
+  background-color: #4F46E5;
+}
+
+.section2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section2Words{
+  padding: 0px 100px;
+}
+
+.section2Title{
+  font-size: 1px !important;
+}
+
+.section2Image{
+  position: relative;
+  left: 40px;
+  width: 150%;
+}
+
+.chatsImg{
+  width: 90%;
+}
+
+/* section3 */
+.section3{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.section3Words{
+  padding: 0px 100px;
+}
+
+.section3Title{
+  font-size: 1px !important;
+}
+
+.section3Image{
+  position: relative;
+  left: 40px;
+  width: 150%;
+  padding-left: 40px;
+}
+
+.section3Img{
+  width: 90%;
+}
+
+.section3Calendar{
+  position: relative;
+  top: -490px;
+  left: 390px;
+  width: 35%;
+}
+
+/* section4 */
+.section4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+  margin-bottom: 70px;
+}
+
+.section4Words{
+  padding: 0px 100px;
+}
+
+.section4Title{
+  font-size: 1px !important;
+}
+
+.section4Words{
+  padding-bottom: 120px;
+}
+
+.section4Image{
+  position: relative;
+  left: 40px;
+  width: 120%;
+  padding-left: 40px;
+}
+
+.section4Img{
+  width: 90%;
+  padding-right: 80px;
+}
+
+.section4Child1{
+  position: relative;
+  top: -380px;
+  left: 313px;
+  width: 30%;
+}
+
+.section4Child2{
+  position: relative;
+  width: 30%;
+  top: -220px;
+  left: 100px;
+}
+
+/* section4 */
+.section5{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+.section5Words{
+  padding: 0px 100px;
+}
+
+.section5Title{
+  font-size: 1px !important;
+}
+
+.section5Words{
+  padding-bottom: 190px;
+}
+
+.section5Image{
+  position: relative;
+  left: 40px;
+  width: 120%;
+  padding-left: 40px;
+}
+
+.section5Img{
+  width: 100%;
+  padding-right: 80px;
+}
+
+.section5Child1{
+  position: relative;
+  top: -330px;
+  left: 30px;
+  width: 30%;
+}
+
+.section5Child2{
+  position: relative;
+  width: 30%;
+  top: -170px;
+  left: -185px;
+}
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Untuk layar yang lebih besar dari 768px */
+@media only screen and (min-width: 769px) {
+  .navbar {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+
+  .navCustom {
+    width: 100%;
+    text-decoration: none;
+    background-color: rgba(84, 103, 232, 0.61);
+    border-radius: 5px;
+    padding: 10px 20px; /* Menambahkan padding */
+    width: 200px; /* Lebar yang lebih panjang, bisa disesuaikan */
+    text-align: center; /* Agar teks berada di tengah */
+}
+
+  .rowMenu{
+    display: flex;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .navbar-collapse.show {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .navbar-collapse.show .nav-link {
+    color: black !important;
+  }
+
+  .navbar-collapse.show .nav-link:hover {
+    color: #6366F1 !important; 
+  }
+
+  .emailHero{
+    width: 100% !important;
+    margin-bottom: 10px; 
+  }
+
+  .buttonHero{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .heading1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .section2Body{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .section2Words{
+    padding: 0px 30px;
+  }
+
+  .section2Image{
+    width: 250%;
+  }
+
+  .chatsImg{
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 250px;
+  }
+
+  .section3{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .heading1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .section2Body{
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .section2Words{
+    padding: 0px 30px;
+  }
+
+  .section2Image{
+    width: 250%;
+  }
+
+  .chatsImg{
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 250px;
+  }
+
+  /* section3 */
+
+  .section3{
+    display: flex;
+    flex-direction: col;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  .section3Words{
+    padding: 0px 30px;
+  }
+  
+  .section3Title{
+    font-size: 1px !important;
+  }
+  
+  .section3Image{
+    position: relative;
+    left: 40px;
+    width: 250%;
+    padding-left: 40px;
+  }
+  
+  .section3Img{
+    display: inline;
+    width: 40%; 
+    position: relative;
+    left: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .section3Calendar{
+    position: relative;
+    top: -90px;
+    left: -20px;
+    width: 20%;
+  }
+
+  /* section4 */
+
+  .section4{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  .section4Words{
+    margin-top: -150px;
+    padding: 0px 30px;
+  }
+  
+  .section4Title{
+    font-size: 1px !important;
+  }
+  
+  .section4Image{
+    position: relative;
+    left: -15px;
+    width: 140%;
+  }
+  
+  .section4Img{
+    display: inline;
+    width: 100%; 
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .section4Child1{
+    display: inline;
+    position: relative;
+    width: 30%;
+    left: 260px;
+    top: -465px;
+  }
+
+  .section4Child2{
+    display: inline;
+    position: relative;
+    width: 30%;
+    left: 103px;
+    top: -350px;
+  }
+  
+  /* section5 */
+
+  .section5{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  .section5Words{
+    margin-top: -150px;
+    padding: 0px 30px;
+  }
+  
+  .section5Title{
+    font-size: 1px !important;
+  }
+  
+  .section5Image{
+    position: relative;
+    left: -15px;
+    width: 140%;
+  }
+  
+  .section5Img{
+    display: inline;
+    width: 100%; 
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .section5Child1{
+    display: inline;
+    position: relative;
+    width: 30%;
+    left: 65px;
+    top: -250px;
+  }
+
+  .section5Child2{
+    display: inline;
+    position: relative;
+    width: 30%;
+    left: -92px;
+    top: -140px;
+  }
+
+
+
+
+
+}
