@@ -118,6 +118,11 @@ body{
   width: 250px;
 }
 
+.buttonHero{
+  display: flex;
+  flex-direction: row;
+}
+
 .hero-section .btn {
   background-color: #6366F1;
   color: white;
@@ -286,6 +291,148 @@ body{
   left: -185px;
 }
 
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  left: 140px;
+}
+
+.card, .card2, .card3, .card4{
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  min-width: 300px;
+  height: auto;
+}
+
+.rating {
+  color: #FFC107;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.testimonial {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.profile h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #343a40;
+}
+
+.profileBio{
+  padding-top: 20px;
+}
+
+.profile .role {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+button,i{
+  border: none;
+  background-color: #fff;
+  color: blue;
+}
+
+.footer {
+  background-color: #1a1a3b;
+  color: #fff;
+  padding: 50px;
+}
+
+.footer .footer-section {
+  margin-bottom: 30px; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 150px;
+  margin-top: 20px;
+}
+
+.footer-section h4 {
+  color: #5b71e0;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section .newsletter {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section .newsletter input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+
+}
+
+.footer-section .newsletter button {
+  padding: 10px 20px;
+  background-color: #5b71e0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
 
 
 /* Responsive Styles */
@@ -297,7 +444,7 @@ body{
 }
 
 /* Untuk layar yang lebih besar dari 768px */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .navbar {
     padding-left: 170px;
     padding-right: 170px;
@@ -317,9 +464,11 @@ body{
     display: flex;
     gap: 50px;
   }
+
+  
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 
   body{
     overflow-x: hidden;
@@ -556,8 +705,79 @@ body{
     top: -140px;
   }
 
+  .card-container {
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    left: -50px;
+  }
 
+  .card, .card2, .card3, .card4 {
+    min-width: 250px;
+    max-width: 250px;
+    padding: 15px;
+  }
 
+  .profile img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
 
+  .profileBio h3 {
+    font-size: 16px;
+  }
+
+  .profile .role {
+    font-size: 12px;
+  }
+
+  .testimonial {
+    font-size: 13px;
+  }
+
+  .rating {
+    font-size: 18px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding-top: 10px;
+    text-align: start;
+  }
+
+  .footer-section1{
+    order: 2;
+  }
+
+  .footer-section2{
+    order: 3;
+  }
+  .footer-section3{
+    order: 4;
+  }
+
+  .footer-section4{
+    order: 1;
+  }
+
+  .footer-section {
+    margin-top: 10px;
+  }
+
+  .footer-section .newsletter {
+    flex-direction: column;
+  }
+
+  .footer-section .newsletter input[type="email"] {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .footer-section .newsletter button {
+    width: 100%;
+  }
 
 }
+
