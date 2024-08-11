@@ -250,7 +250,6 @@ body{
   justify-content: center;
   align-items: center;
   margin-top: -150px;
-  margin-bottom: 50px;
 }
 
 .section5Words{
@@ -704,6 +703,7 @@ button,i{
     left: -92px;
     top: -140px;
   }
+
 
   .card-container {
     flex-wrap: nowrap;
